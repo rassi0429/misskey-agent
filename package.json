@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/rassi0429/misskey-agent#readme",
   "dependencies": {
+    "dotenv": "^17.2.3",
     "ws": "^8.18.3"
   }
 }

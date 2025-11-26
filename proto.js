@@ -1,10 +1,13 @@
 // misskey-momo-watcher.js
 const WebSocket = require('ws');
+const dotenv = require('dotenv');
+
+dotenv.config();
 
 const CONFIG = {
   misskey: {
     host: 'https://misskey.resonite.love', // ← 変更
-    token: '',               // ← 変更
+    token: process.env.MISSKEY_TOKEN,               // ← 変更
   },
   ollama: {
     host: 'http://192.168.0.36:11434',
