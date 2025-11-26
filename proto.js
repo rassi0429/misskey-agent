@@ -23,19 +23,22 @@ const CLASSIFIER_PROMPT = `You are a classifier for an SNS agent AI named "モ�
 "牛乳買わなきゃ" → {"need_response": true}
 "明日までにレポートやらないと" → {"need_response": true}
 "今日やること うんち ごみだし しごと" → {"need_response": true}
+"ワールドクラッシュして4時間分消えた… 復旧方法とかってありますか" → {"need_response": false}
 "やはりDice throneを遊べるようにするべきか" → {"need_response": false}
 "うどんおいしかった" → {"need_response": false}
 "どうしようかな" → {"need_response": false}
 "○○さんとご飯食べた" → {"need_response": false}
+"データ消えた最悪…" → {"need_response": false}
 ---
 ## RULES:
 **TRUE only when:**
 - Contains "モモちゃん", "モモ", "@momo" AND requesting something
 - User declares firm TODO: 〜なきゃ, 〜ないと, 〜しよう
-- User lists tasks: 今日やること, やること, TODOリスト, タスク
+- User lists tasks: 今日やること, やること, TODO
 **FALSE when:**
+- Venting/Complaining about problems (even with questions like ありますか)
 - Thinking/Wondering: 〜べきか, 〜かな, 〜だろうか
-- No "モモちゃん" AND no firm TODO pattern AND no task list
+- No "モモちゃん" AND no firm TODO pattern
 - Talking about others or past events
 ---
 **OUTPUT ONLY THE JSON. NO EXPLANATION. NO THINKING.**
