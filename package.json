@@ -1,0 +1,26 @@
+{
+  "name": "misskey-agent",
+  "version": "1.0.0",
+  "description": "",
+  "main": "proto.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rassi0429/misskey-agent.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rassi0429/misskey-agent/issues"
+  },
+  "homepage": "https://github.com/rassi0429/misskey-agent#readme",
+  "dependencies": {
+    "ws": "^8.18.3"
+  }
+}
