@@ -4,7 +4,7 @@ const WebSocket = require('ws');
 const CONFIG = {
   misskey: {
     host: 'https://misskey.resonite.love', // ← 変更
-    token: 'XRzIXB6l2Jk6L9adzxO5czYWq88TK3Ry',               // ← 変更
+    token: '',               // ← 変更
   },
   ollama: {
     host: 'http://192.168.0.36:11434',
